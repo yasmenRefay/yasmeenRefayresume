@@ -1,0 +1,164 @@
+<h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">Angular 16</h2>
+<div class="flex justify-center pt-10  ">
+  @for (item of user.portfolio.sectionOne.items; track $index)
+  {
+    <div class=" parentOne  parent shadow-2xl rounded-lg m-5 pb-7 lg:w-[30%] w-full ">
+      <div >
+        <img [src]="item.cover" alt="site-photo"  class="rounded-t-lg h-[250px] mb-3" />
+      </div>
+      <div class="px-4">
+        <hr>
+        <h3 class="text-yellow-300 text-2xl pb-2 ">{{item.name}}</h3>
+        <p class="py-2">{{item.description}}</p>
+      </div>
+      <div class="child px-3 border-2 border-yellow-300 rounded-lg">
+        <h3 class="text-yellow-300 pt-4 text-2xl font-bold ">Accomplishments</h3>
+            <ul style="list-style-type:square;" class="p-4 font-bold mb-3">
+              @for (subItem of item.ul; track $index)
+              {
+                <li>{{subItem.li}}</li>
+              }
+            </ul>
+            <hr>
+        <div class="flex justify-center pt-6 ">
+          <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer ">
+            <a [href]="item.link[0].linkDemo" target="_blank" class="text-xl text-white">
+              <i class="fa-solid fa-share-from-square" ></i>
+            </a>
+          </div>
+          <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer " >
+            <a [href]="item.link[0].linkRepo" target="_blank" class="text-xl text-white">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+
+<h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">jQuery</h2>
+<div class="flex justify-center pt-10 ">
+  @for (item of user.portfolio.sectionTwo.items; track $index)
+  {
+    <div class=" parent shadow-2xl rounded-lg w-[30%] mx-5 pb-7 ">
+      <div >
+        <img [src]="item.cover" alt="site-photo"  class="rounded-t-lg h-[250px] mb-3" />
+      </div>
+      <div class="px-4 pb-5">
+        <hr>
+        <h3 class="text-yellow-300 text-2xl ">{{item.name}}</h3>
+        <p class="">{{item.description}}</p>
+      </div>
+      <div class="child px-3 border-2 border-yellow-300 rounded-lg">
+        <h3 class="text-yellow-300 pt-4 px-4 text-2xl font-bold ">Accomplishments</h3>
+            <ul style="list-style-type:square;" class="p-8 font-bold mb-3">
+              @for (subItem of item.ul; track $index)
+              {
+                <li>{{subItem.li}}</li>
+              }
+            </ul>
+            <hr>
+        <div class="flex justify-center pt-5 ">
+          <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer ">
+            <a [href]="item.link[0].linkDemo" target="_blank" class="text-xl text-white">
+              <i class="fa-solid fa-share-from-square" ></i>
+            </a>
+          </div>
+          <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer " >
+            <a [href]="item.link[0].linkRepo" target="_blank" class="text-xl text-white">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+
+<h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">JavaScript</h2>
+<div class="md:grid md:grid-cols-3 grid grid-cols-1 gap-4 pt-10 ">
+  @for (item of user.portfolio.sectionThree.items; track $index)
+  {
+    <div class=" parent shadow-2xl rounded-lg  m-5 ">
+      <div >
+        <img [src]="item.cover" alt="site-photo"  class="rounded-t-lg h-[250px] mb-3"/>
+      </div>
+      <div class="px-4">
+        <hr>
+        <h3 class="text-yellow-300 text-2xl ">{{item.name}}</h3>
+        <p class="pb-10">{{item.description}}</p>
+      </div>
+      <div class="child border-2 border-yellow-300 rounded-lg">
+        <h3 class="text-yellow-300 pt-4 px-2 text-2xl font-bold ">Accomplishments</h3>
+            <ul style="list-style-type:square;" class="p-4 font-bold mb-3 px-8">
+              @for (subItem of item.ul; track $index)
+              {
+                <li>{{subItem.li}}</li>
+              }
+            </ul>
+            <hr>
+        <div class="flex justify-center pt-10 ">
+          <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer ">
+            <a [href]="item.link[0].linkDemo" target="_blank" class="text-xl text-white">
+              <i class="fa-solid fa-share-from-square" ></i>
+            </a>
+          </div>
+          <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer " >
+            <a [href]="item.link[0].linkRepo" target="_blank" class="text-xl text-white">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+
+<h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">HTML & CSS</h2>
+<div class="flex justify-center pt-10 ">
+  @for (item of user.portfolio.sectionFour.items; track $index)
+  {
+    <div class=" parent shadow-2xl rounded-lg w-[30%] m-5 pb-7 ">
+      <div >
+        <img [src]="item.cover" alt="site-photo"  class="rounded-t-lg h-[250px] mb-3" />
+      </div>
+      <div class="px-4">
+        <h3 class="text-yellow-300 text-2xl ">{{item.name}}</h3>
+        <p class="py-2">{{item.description}}</p>
+      </div>
+      <div class="child  border-2 border-yellow-300 rounded-lg">
+        <h3 class="text-yellow-300 pt-4 px-4 text-2xl font-bold ">Accomplishments</h3>
+            <ul style="list-style-type:square;" class="p-4 font-bold mb-3 px-8">
+              @for (subItem of item.ul; track $index)
+              {
+                <li>{{subItem.li}}</li>
+              }
+            </ul>
+            <hr>
+                <div class="flex justify-center pt-10 ">
+                  <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer ">
+                    <a [href]="item.link[0].linkDemo" target="_blank" class="text-xl text-white">
+                      <i class="fa-solid fa-share-from-square" ></i>
+                    </a>
+                  </div>
+                  <div class="w-10 h-10 rounded-[50%] bg-yellow-300 hover:bg-yellow-400 flex justify-center items-center mx-2 cursor-pointer " >
+                    <a [href]="item.link[0].linkRepo" target="_blank" class="text-xl text-white">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+      </div>
+    </div>
+  }
+</div>
+
+
+
+
+
+
+

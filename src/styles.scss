@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// transition for all pages
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+}
+
+::view-transition-old(root) {
+  animation: exit 2s ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+  animation: entrance 2s ease 0s 1 normal forwards;
+}

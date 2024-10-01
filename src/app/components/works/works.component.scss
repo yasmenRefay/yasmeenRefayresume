@@ -1,0 +1,71 @@
+.parent {
+  position: relative;
+  overflow: hidden;
+  height:370px;
+}
+
+.child {
+  position: absolute;
+  bottom: -370px; /* Hidden below the parent div */
+  left: 0;
+  right: 0;
+  height:370px;
+  background-color: #fff ;
+  transition: bottom 0.3s ease; /* Smooth transition */
+}
+
+.parent:hover .child {
+  bottom: 0; /* Slide up when hovered */
+}
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(-68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
+
+
+.parentOne {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+
