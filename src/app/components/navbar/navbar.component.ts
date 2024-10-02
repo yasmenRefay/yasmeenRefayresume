@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { FlowbiteService } from '../../core/services/flowbit.service';
+// import { FlowbiteService } from '../../core/services/flowbit.service';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,10 +11,22 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(private _FlowbiteService:FlowbiteService){}
+  // constructor(private _FlowbiteService:FlowbiteService){}
+
+  // ngOnInit(): void {
+  //   this._FlowbiteService.loadFlowbite(()=>{})
+  // }
 
   ngOnInit(): void {
-    this._FlowbiteService.loadFlowbite(()=>{})
+    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    const navbar = document.getElementById('navbar-default');
+
+    if (toggleButton && navbar) {
+      toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('hidden');
+        navbar.classList.toggle('block');
+      });
+    }
   }
 
 
