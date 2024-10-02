@@ -1,5 +1,5 @@
 <h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">Angular 16</h2>
-<div class="flex justify-center pt-10  ">
+<div class="md:flex justify-center pt-10  ">
   @for (item of user.portfolio.sectionOne.items; track $index)
   {
     <div class=" parentOne  parent shadow-2xl rounded-lg m-5 pb-7 lg:w-[30%] w-full ">
@@ -39,10 +39,10 @@
 
 
 <h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">jQuery</h2>
-<div class="flex justify-center pt-10 ">
+<div class="md:flex  justify-center pt-10 ">
   @for (item of user.portfolio.sectionTwo.items; track $index)
   {
-    <div class=" parent shadow-2xl rounded-lg w-[30%] mx-5 pb-7 ">
+    <div class=" parent shadow-2xl rounded-lg  m-5 pb-7  lg:w-[30%] w-full ">
       <div >
         <img [src]="item.cover" alt="site-photo"  class="rounded-t-lg h-[250px] mb-3" />
       </div>
@@ -119,10 +119,10 @@
 
 
 <h2 class="text-yellow-300 pt-20 text-2xl font-bold text-center ">HTML & CSS</h2>
-<div class="flex justify-center pt-10 ">
+<div class="md:flex  justify-center pt-10 ">
   @for (item of user.portfolio.sectionFour.items; track $index)
   {
-    <div class=" parent shadow-2xl rounded-lg w-[30%] m-5 pb-7 ">
+    <div class=" parent shadow-2xl rounded-lg m-5 pb-7 lg:w-[30%] w-full  ">
       <div >
         <img [src]="item.cover" alt="site-photo"  class="rounded-t-lg h-[250px] mb-3" />
       </div>
