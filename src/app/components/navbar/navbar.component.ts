@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
-// import { FlowbiteService } from '../../core/services/flowbit.service';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -9,25 +10,24 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 
-  // constructor(private _FlowbiteService:FlowbiteService){}
-
-  // ngOnInit(): void {
-  //   this._FlowbiteService.loadFlowbite(()=>{})
-  // }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
-    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
-    const navbar = document.getElementById('navbar-default');
+    if (isPlatformBrowser(this.platformId)) {
+      const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+      const navbar = document.getElementById('navbar-default');
 
-    if (toggleButton && navbar) {
-      toggleButton.addEventListener('click', () => {
-        navbar.classList.toggle('hidden');
-        navbar.classList.toggle('block');
-      });
+      if (toggleButton && navbar) {
+        toggleButton.addEventListener('click', () => {
+          navbar.classList.toggle('hidden');
+          navbar.classList.toggle('block');
+        });
+      }
     }
   }
-
-
 }
+
+
+
