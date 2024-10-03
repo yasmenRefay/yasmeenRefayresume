@@ -159,7 +159,7 @@ export const user = {
           {
             cover: '../assets/img/games.png',
             name: 'Games Site',
-            description:'design for game search and ads for weather application to visite with slider and drag swaper and some animation .',
+            description:'This platform is designed to help users easily search for their favorite games, featuring smooth animations and a user-friendly interface. I’ve applied Object-Oriented Programming (OOP) principles throughout the development, ensuring clean, maintainable, and scalable code.',
             link: [
               {
                 linkDemo: 'https://games-site-three.vercel.app',
