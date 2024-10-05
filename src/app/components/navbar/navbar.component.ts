@@ -18,6 +18,8 @@ export class NavbarComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
       const navbar = document.getElementById('navbar-default');
+      const navbarLinks = document.querySelectorAll('a')
+
 
       if (toggleButton && navbar) {
         toggleButton.addEventListener('click', () => {
@@ -25,6 +27,16 @@ export class NavbarComponent implements OnInit {
           navbar.classList.toggle('block');
         });
       }
+
+      navbarLinks.forEach(link => {
+        link.addEventListener('click' , () => {
+          navbar?.classList.add('hidden');
+          navbar?.classList.remove('block');
+        })
+      });
+
+
+
     }
   }
 }
