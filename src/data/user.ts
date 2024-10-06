@@ -70,8 +70,8 @@ export const user = {
             description:'E-commerce Application develop with angular 16 .',
             link: [
               {
-                linkDemo: 'https://e-commerce-snowy-psi-53.vercel.app',
-                linkRepo: 'https://github.com/yasmenRefay/-E-commerce',
+                linkDemo: 'https://e-commerce-eta-six-36.vercel.app',
+                linkRepo: 'https://github.com/yasmenRefay/e-commerce',
               }],
             ul : [
               { li: 'Ui (display data)', id: 1 },
