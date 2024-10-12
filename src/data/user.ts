@@ -62,12 +62,12 @@ export const user = {
   portfolio: {
     sectionOne:
       {
-        title:"Angular 16",
+        title:"Angular 17",
         items: [
           {
             cover: '../assets/img/Freshcart.png',
             name: 'FreshMarket',
-            description:'E-commerce Application develop with angular 16 .',
+            description:'E-commerce Application develop with angular 17 .',
             link: [
               {
                 linkDemo: 'https://e-commerce-eta-six-36.vercel.app',
