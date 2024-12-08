@@ -29,7 +29,7 @@ export class HomeComponent {
       link.setAttribute('target', '_blank');
       link.setAttribute(
         'href',
-        'https://drive.google.com/file/d/1MLs_4-KaIXd9x5P7ILZKswtOie0tjhVP/view?usp=drive_link'
+        'https://drive.google.com/file/d/1p9XL2dA7TLysDpNeg43NmgtWjX1jYgUC/view'
       );
       link.setAttribute('download', `CV.pdf`);
       document.body.appendChild(link);
