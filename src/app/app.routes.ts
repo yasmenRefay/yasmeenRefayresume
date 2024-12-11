@@ -6,6 +6,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
 import { WorksComponent } from './components/works/works.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { BookingWebsiteComponent } from './components/booking-website/booking-website.component';
+import { SapetrolAppComponent } from './components/sapetrol-app/sapetrol-app.component';
 
 export const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -15,6 +17,8 @@ export const routes: Routes = [
   {path:'contact',component:ContactComponent,title:'Contact'},
   {path:'services',component:ServicesComponent,title:'Services'},
   {path:'projects',component:WorksComponent,title:'Services'},
+  {path:'bookingWebsite',component:BookingWebsiteComponent,title:'bookingWeb'},
+  {path:'sapetrolApp',component:SapetrolAppComponent,title:'sapetrolApp'},
 
 
 

@@ -96,7 +96,7 @@ export const user = {
                 linkRepo: 'https://github.com/yasmenRefay/routing',
               }],
               ul : [
-                { li: 'Angular 16', id: 1 },
+                { li: 'Angular 17', id: 1 },
                 { li: 'TypeScript', id: 2 },
                 { li: 'HTML5', id: 3 },
                 { li: 'Css3', id: 4 },
@@ -281,7 +281,80 @@ export const user = {
           },
 
         ],
-      }
+      },
+
+    sectionFive:
+      {
+        title:"Freelance projects",
+        items: [
+          {
+            cover: '../assets/img/Golden Developer1.png',
+            name: 'GOLDEN DEVELOPERS',
+            description:'A 15-page ticket booking website.',
+            link: [
+              {
+                linkDemo: '',
+                linkRepo: '',
+              }],
+              ul : [
+                { li: 'HTML5', id: 1 },
+                { li: 'Css3', id: 2 },
+                { li: 'Bootstrap5', id: 3 },
+              ],
+          },
+
+        ],
+      },
+
+    sectionSix:
+      {
+        title:"Ionic React",
+        items: [
+          {
+            cover: '../assets/img/sapetrol1.png',
+            name: 'Sapetrol Project',
+            description:'This project demonstrates proficiency in building scalable and user-centric applications with modern technologies.',
+            link: [
+              {
+                linkDemo: '',
+                linkRepo: '',
+              }],
+              ul : [
+                { li: 'API Integration', id: 1 },
+                { li: 'Media Uploads', id: 2 },
+                { li: 'Admin Dashboard', id: 3 },
+                { li: 'Authentication', id: 3 },
+                { li: 'Multi-Page Design', id: 3 },
+                { li: 'User-Friendly Interface', id: 3 },
+              ],
+          },
+        ],
+      },
+
+    sectionSeven:
+      {
+        title:"Ionic Angular",
+        items: [
+          {
+            cover: '../assets/img/todo app ionic.png',
+            name: 'To-Do App',
+            description:'This project showcases the practical application of core Ionic components and services.',
+            link: [
+              {
+                linkDemo: 'https://todo-app-ionic-orcin.vercel.app',
+                linkRepo: 'https://github.com/yasmenRefay/todo-app-ionic',
+              }],
+              ul : [
+                { li: 'Efficient Form Handling', id: 1 },
+                { li: 'Seamless Page Navigation', id: 2 },
+                { li: 'Effective Data Management', id: 3 },
+                { li: 'User Notifications', id: 4 },
+              ],
+          },
+
+        ],
+      },
+
   },
 };
 
